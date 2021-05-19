@@ -1,0 +1,37 @@
+# This is the Quick Colour Box Assignment
+#User inputs box size
+#User inputs colour
+#System outputs box
+
+user_size = ""
+user_colour = ""
+system_output = ""
+tf = False
+
+user_size = input("Please input box size as xs, s, m, l, xl : ")
+
+while tf == False:
+    if str(user_size) == "xs":
+        user_size = "extra small"
+        tf = True
+    elif str(user_size) == "s":
+        user_size = "small"
+        tf = True
+    elif str(user_size) == "m":
+        user_size = "medium"
+        tf = True
+    elif str(user_size) == "l":
+        user_size = "large"
+        tf = True    
+    elif str(user_size) == "xl":
+        user_size = "extra large"
+        tf = True
+    else:
+        user_size = input("Please input box size as xs, s, m, l, xl : ")
+
+user_colour = input("Please input colour of the box: ")
+
+system_output = ("Your input is a " + user_size + " " + user_colour + " box.")
+
+system_output
+
